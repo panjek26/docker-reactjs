@@ -45,4 +45,5 @@ jobs:
         export TAG=`echo $GITHUB_REF | awk -F/ '{print $NF}'`
         echo $TAG
         docker push us-east1-docker.pkg.dev/gke-panji/docker-panji/reactgit:latest
+        gcloud container clusters get-credentials cluster-1 --zone us-central1-c --project gke-panji
         helm delete reactjs
