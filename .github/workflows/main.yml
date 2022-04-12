@@ -46,4 +46,4 @@ jobs:
         echo $TAG
         docker push us-east1-docker.pkg.dev/gke-panji/docker-panji/reactgit:latest
         gcloud container clusters get-credentials cluster-1 --zone us-central1-c --project gke-panji
-        helm install reactjs springboot
+        helm install reactjs /home/panjipratamakurniawan001/springboot
